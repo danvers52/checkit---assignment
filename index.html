@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check It</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Task List</h1>
+    
+    <form id="task-form">
+        <input type="text" id="title" placeholder="Task Title" required>
+        <input type="text" id="describe" placeholder="Task Description" required>
+        <button type="submit">Add Task</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Task Title</th>
+                <th>Task Description</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="task-table-body"></tbody>
+    </table>
+   
+    <script src="script.js"></script>
+</body>
+</html>

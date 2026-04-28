@@ -1,0 +1,93 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+h1 {
+    text-align: center;
+    color: #ccc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3rem;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 14px;
+}
+
+#title {
+    width: 200px;
+}
+
+#describe {
+    width: 270px;
+}
+
+td:nth-child(2) input{
+    width: 150px;
+}
+
+td:nth-child(3) input {
+    width: 300px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button.edit {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+button.delete {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+button.edit:hover {
+    background-color: #2980b9;
+}
+
+button.delete:hover {
+    background-color: #c0392b;
+}
