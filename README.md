@@ -34,6 +34,40 @@ CREATE TABLE Tasks (
   Description VARCHAR(100) NOT NULL
 );
 
-git clone <your-repo-url>
-cd <your-repo-folder>
+## ⚙️ Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/danvers52/checkit--assignment.git
+   cd checkit--assignment
 
+2. Install dependencies:
+```in terminal
+npm install express cors mssql
+
+3. Initializing the code if needed:
+npm init -y
+npm install mssql msnodesqlv8 body-parser express cors
+
+4. SQL Server Connection in index.js:
+const config = {connectionString: "Driver={ODBC Driver 17 for SQL Server Server=Tara-01; Database=CheckIT; Trusted_Connection=Yes"};
+
+5. Start the server:
+node index.js
+
+##🚀 Usage
+- Open index.html in a browser.
+- Add a task using the form (Title + Description).
+- View tasks in the table.
+- Update or delete tasks using the buttons.
+
+##⚠️ Error Handling
+- Alerts when tasks fail to load.
+- Alerts when adding/updating/deleting fails.
+- Console logs for debugging.
+
+## 📂 Project Structure
+- **index.js** → Backend server using Node.js + Express. Handles CRUD routes (GET, POST, PUT, DELETE) and connects to SQL Server.
+- **index.html** → Frontend structure. Contains the task list table, form inputs, and buttons.
+- **style.css** → Styling for the interface (fonts, spacing, table formatting, button colors).
+- **script.js** → Frontend logic. Fetches tasks from the backend, dynamically renders them, and handles add/update/delete actions.
+- **README.md** → Documentation explaining the project, setup, and usage.
